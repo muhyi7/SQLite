@@ -26,6 +26,7 @@
         android:layout_alignRight="@id/textView1"
         android:layout_below="@id/textView1"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
         android:text="TextView"/>
     <TextView
         android:id="@+id/textView3"
