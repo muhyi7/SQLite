@@ -44,14 +44,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void RefreshList() {
+    public void RefreshList() {
         SQLiteDatabase db = dbcenter.getReadableDatabase();
         cursor = db.rawQuery("SELECT * FROM biodata", null);
         daftar = new String[cursor.getCount()];
         cursor.moveToFirst();
         for (int cc=0; cc < cursor.getCount(); cc++){
-            cursor.moveToFirst();
-//            cursor.moveToFirst(cc);
+//            cursor.moveToFirst();
+            cursor.moveToPosition(cc);
             daftar[cc] = cursor.getString(1).toString();
         }
         ListView01 = (ListView) findViewById(R.id.listView1);
