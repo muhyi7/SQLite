@@ -22,8 +22,6 @@ public class BuatBiodata extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buat_biodata);
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));
-
         dbHelper = new DataHelper(this);
         text1 = (EditText) findViewById(R.id.editText1);
         text2 = (EditText) findViewById(R.id.editText2);
